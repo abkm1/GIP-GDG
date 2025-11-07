@@ -1,0 +1,239 @@
+#root {
+  
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Sedan SC', serif;
+ 
+  
+}
+
+header {
+  background-image: url('./assets/etincelles_red.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 20vh; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+  position: relative;
+}
+
+/* Pour améliorer la lisibilité du texte */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* Le contenu au-dessus de l'overlay */
+header > * {
+  position: relative;
+  z-index: 2;
+  color: white; /* Texte en blanc */
+}
+header img{
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+.meta-line{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 20%;
+  height: auto;
+  cursor: pointer;
+}
+
+ header nav{
+  width: 50%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  
+
+}
+header nav a{
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+header button{
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: rgba(229, 185, 1, 1);
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icons{
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+.icons-hero{
+   width: 20px;
+  height: auto;
+}
+
+.group12{
+  width: 35%;
+  height: auto;
+}
+
+.about-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-main{
+  margin-left:15% ;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-icons{
+  height: auto;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.about-logos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 500px; /* Ajustez selon vos besoins */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.about-logos img{
+   height: 60px; /* Taille uniforme */
+  width: auto;
+  object-fit: contain;
+}
+.about-logos div:first-child .logo {
+  height: 50px; /* Logo INNOGAME plus grand */
+}
+
+.about-logos div:last-child .logo {
+  height: 50px; /* Logo GDG plus petit */
+   margin-top: 1rem;
+}
+
+.about-regester{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.about-regester button{
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-right: none;
+  border-left:none;
+  color: red;
+  border-radius: 10px;
+}
+
+.about span {
+  color:red
+}
+
+
+.agenda-main img{
+  height: 250px;
+}
+
+
+
+.agenda-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.agenda-main img:first-child {
+  position: relative;
+  top: -17vh;
+}
+
+.agenda-main img:last-child {
+  position: relative;
+  top: -32.5vh;
+  right: -9rem;
+}
+
+
+.agenda{
+width: 100%;
+margin-top: 5rem;
+margin-inline: auto;
+max-width: 1200px;
+background-image: url('./assets/enticelle1.png');
+background-size: contain;
+background-position: left;
+background-repeat: no-repeat;
+overflow-x: hidden;
+position: relative;
+}
+
+.about p{
+  margin-top: 1rem;
+ 
+}
+.agenda p{
+ position: relative;
+ top: -20vh;
+ cursor: pointer;
+}
+
+.contact > * {
+  margin-top: 1rem;
+}
+.contact{
+  position: relative;
+  top: -3rem;
+   background-image: url('./assets/enticelle2.png');
+   background-size:contain;
+  background-position:right;
+  background-repeat: no-repeat;
+}
+
+button{
+  cursor: pointer;
+}
+
+.agenda span{
+  color: red;
+}
