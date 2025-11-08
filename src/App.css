@@ -1,16 +1,14 @@
 #root {
-  
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: 'Sedan SC', serif;
- 
-  
+  font-family: 'Sedan SC', serif;
 }
 
 header {
@@ -198,14 +196,10 @@ header button{
 .agenda{
 width: 100%;
 margin-top: 5rem;
-margin-inline: auto;
-max-width: 1200px;
-background-image: url('./assets/enticelle1.png');
-background-size: contain;
-background-position: left;
-background-repeat: no-repeat;
-overflow-x: hidden;
-position: relative;
+  background-image: url('./assets/enticelle1.png');
+   background-size:contain;
+  background-position:left;
+  background-repeat: no-repeat;
 }
 
 .about p{
